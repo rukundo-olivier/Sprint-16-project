@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/header.ejs') %>
+<body>
+    <%- include('./partials/navbar.ejs') %>
+    <section>
+        <% if (quotes.length > 0) { %> 
+            <% quotes.forEach(quote => {%>
+                <h3 class="title">~ <%= element.author %>,</h3>
+                <p class="snippet"><%= element.snippet %></p>
+            <% }) %> 
+        <% } else { %>
+            <p>There are currently no quotes to display ...</p>
+        <% } %>
+    </section>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

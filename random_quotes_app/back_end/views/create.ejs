@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/header.ejs') %>
+<body>
+    <%- include('./partials/navbar.ejs') %>
+        <label for="author">Quote author:</label>
+        <input type="text" id="author" required />
+        <label for="snippet">Quote synopsis:</label>
+        <input type="text" id="snippet" required />
+        <label for="body">Quote body:</label>
+        <input type="text" id="body" required />
+        <button>Submit</button>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
